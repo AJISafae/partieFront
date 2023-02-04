@@ -16,7 +16,7 @@ export default class Alltrainers extends Component{
       }
       async componentDidMount() {
         try {
-          const response = await fetch('http://localhost:3000/trainers');
+          const response = await fetch('https://projetpoca-production.up.railway.app/trainers');
           const json = await response.json();
           this.setState({ 
             trainers: json,
